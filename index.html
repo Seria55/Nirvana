@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nirvana - Map</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+<main id="container" class="no-ui">
+  <canvas id="map" width="4096" height="4096"></canvas>
+  <div id="markers"></div>
+  <aside id="sidebar">
+    <div id="sidebar-main">
+      <header>
+        <h2><a href="/">Nirvana</a></h2>
+      </header>
+      <section id="zoom" class="panel">
+        <h3>Zoom</h3>
+        <div id="zoom-in">+</div>
+        <div id="zoom-out">-</div>
+        <div id="zoom-scale"></div>
+      </section>
+      <section id="map-type" class="panel">
+        <h3>Map Type</h3>
+        <div id="map-terrain" class="selected">Terrain</div>
+        <div id="map-topographic">Topographic</div>
+        <div id="map-isometric">Isometric</div>
+      </section>
+      <section id="coords" class="panel">
+        <h3>Coordinates</h3>
+        <div id="coords-pointer"></div>
+        <div id="coords-mouse">0, 0</div>
+        <div id="coords-distance"></div>
+      </section>
+      <section id="layers" class="panel">
+        <h3>Layers</h3>
+        <label><input type="checkbox" id="layer-deeds" />Deeds</label>
+        <label><input type="checkbox" id="layer-perimeters" />Perimeters</label>
+        <label><input type="checkbox" id="layer-guardtowers" />Guard towers</label>
+        <label><input type="checkbox" id="layer-signs" />Signs</label>
+      </section>
+      <section id="info" class="panel">
+        <h3>Info</h3>
+        <div id="info-details"></div>
+      </section>
+    </div>
+    <footer>
+      <div id="timestamp"></div>
+      <a id="map-file" href="#" target="_blank">Map file</a>
+      <div id="version">Map Viewer v1.2.2</div>
+    </footer>
+  </aside>
+  <button id="sidebar-toggle"><i></i></button>
+  <div id="search">
+    <input type="text" id="searchbox" placeholder="Search deeds and locations..." />
+    <div id="searchbutton"></div>
+  </div>
+  <div id="autocomplete" style="display: none;"></div>
+</main>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="map.js"></script>
+</body>
+</html>

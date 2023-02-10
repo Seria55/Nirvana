@@ -1,0 +1,713 @@
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #444444;
+}
+
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+	color: #AAA;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #AAA;
+}
+::placeholder {
+	color: #AAA;
+}
+
+#container {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	background-color: #383E71;
+	background-image: url('bg.png');
+	background-repeat: repeat;
+	cursor: default;
+}
+
+#container:active {
+	cursor: default;
+}
+
+#map {
+	position: absolute;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+#markers {
+	position: absolute;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.marker {
+	position: absolute;
+	text-align: center;
+	width: 256px;
+	height: 256px;
+}
+
+.deed {
+	display: inline;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #fff;
+	padding: 1px 2px 1px 2px;
+	line-height: 256px;
+	position: relative;
+	top: -16px;
+}
+
+.deed:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid rgba(0, 0, 0, 0.5);
+	position: absolute;
+	margin-left: -8px;
+	left: 50%;
+	bottom: -8px;
+}
+
+.deed.deed-permanent {
+	color: #ff8800;
+}
+
+.deed.deed-normal {}
+
+.zoom0 .deed.deed-normal,
+.zoom1 .deed.deed-normal,
+.zoom2 .deed.deed-normal { display: none !important; }
+.zoom3 .deed.deed-normal { font-size: 73%;top: -13px; }
+
+.border {
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 1px;
+	position: absolute;
+}
+
+.border.selected {
+	border: 1px solid #CCFFFF;
+}
+
+.bounds {
+	position: absolute;
+}
+
+.perimeter {
+	border: 1px dashed rgba(0, 255, 255, 0.5);
+	position: absolute;
+}
+
+.focusZone {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 1px 2px 1px 2px;
+	line-height: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.tower {
+	display: none;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url('tower.png') top left no-repeat;
+}
+
+.sign {
+	display: none;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url('sign.png') top left no-repeat;
+}
+
+.zoom0 .tower, .zoom1 .tower, .zoom2 .tower, .zoom3 .tower,
+.zoom0 .sign,  .zoom1 .sign,  .zoom2 .sign,  .zoom3 .sign,
+.zoom4 .sign,  .zoom5 .sign,  .zoom6 .sign,  .zoom7 .sign { display: none !important; }
+
+.pointer {
+	display: none;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url('pointer.png') top left no-repeat;
+}
+
+.notification {
+	box-sizing: border-box;
+	position: fixed;
+	width: 400px;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -200px;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	color: #000000;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*
+    public static final byte TYPE_NONE = 0;
+    public static final byte TYPE_VOLCANO = 1;
+    public static final byte TYPE_PVP = 2;
+    public static final byte TYPE_NAME = 3;
+    public static final byte TYPE_NAME_POPUP = 4;
+    public static final byte TYPE_NON_PVP = 5;
+    public static final byte TYPE_PVP_HOTA = 6;
+    public static final byte TYPE_PVP_BATTLECAMP = 7;
+    public static final byte TYPE_FLATTEN_DIRT = 8;
+    public static final byte TYPE_HOUSE_WOOD = 9;
+    public static final byte TYPE_HOUSE_STONE = 10;
+    public static final byte TYPE_PREM_SPAWN = 11;
+    public static final byte TYPE_NO_BUILD = 12;
+    public static final byte TYPE_TALLWALLS = 13;
+    public static final byte TYPE_FOG = 14;
+    public static final byte TYPE_FLATTEN_ROCK = 15;
+*/
+
+.fzb_5 {
+	border: 1px solid rgba(255, 255, 0, 0.35);
+}
+
+.fzb_12 {
+	border-color: red;
+	background-color: #F44;
+	opacity: 0.2;
+}
+
+.fzm_12 span {
+	color: #F44;
+}
+
+#sidebar {
+	position: absolute;
+	box-sizing: border-box;
+	display: block;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: stretch;
+	top: 8px;
+	left: 8px;
+	bottom: 8px;
+	width: 181px;
+	margin: 0;
+	padding: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 3px 0 3px 3px;
+	transition: left 200ms ease-in-out;
+}
+.no-sidebar #sidebar {
+	left: -181px;
+}
+
+#sidebar > div {
+	flex: 2 2;
+}
+
+#sidebar h2 {
+	position: relative;
+	display: block;
+	text-align: center;
+	font-family: "Book Antiqua", serif;
+	font-weight: normal;
+	font-size: 145%;
+	line-height: 1.625em;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar footer {
+	flex: 0 0;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.panel {
+	display: block;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+	border-radius: 2px;
+	margin: 8px 0 0 0;
+}
+
+.panel h3 {
+	margin: 0;
+	padding: 2px 0;
+	font-size: 110%;
+	font-weight: bold;
+	text-align: center;
+	background-color: #EEE;
+	border-bottom: 1px solid #CCC;
+}
+
+.panel div {
+	display: block;
+	background-color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.panel div:hover {
+	background-color: #EEEEEE;
+}
+
+.panel div:active {
+	padding-top: 1px;
+	margin-bottom: -1px;
+}
+
+.panel .selected {
+	background-color: #D5E9FF;
+	cursor: default;
+}
+
+.panel .selected:hover {
+	background-color: #D5E9FF;
+}
+
+.panel label {
+	display: block;
+	margin: 2px 0;
+	padding: 0;
+}
+
+.panel input[type=checkbox],
+.panel input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    padding: 0;
+    margin: 0 3px;
+}
+
+.panel:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#zoom {
+}
+
+#zoom-in,
+#zoom-out {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 180%;
+}
+
+#zoom-in {
+	float: left;
+	border-right: 1px solid #CCC;
+}
+
+#zoom-out {
+	float: right;
+	border-left: 1px solid #CCC;
+}
+
+#zoom-scale  {
+	line-height: 32px;
+	font-size: 110%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#map-type {
+}
+
+#map-type div {
+	line-height: 20px;
+	border-bottom: 1px solid #CCC;
+}
+
+#map-type div:last-child {
+	border-bottom: none;
+}
+
+#coords #coords-pointer,
+#coords #coords-distance {
+	display: none;
+}
+
+#coords.pointer-set #coords-pointer,
+#coords.pointer-set #coords-distance {
+	display: block;
+}
+
+#coords p {
+	text-align: center;
+	margin: 0;
+	padding: 2px;
+}
+
+#info-details {
+	text-align: left;
+	margin: 0;
+	padding: 2px;
+}
+
+#info-details h4 {
+	font-size: 110%;
+	font-weight: bold;
+	text-align: center;
+	background-color: #D5E9FF;
+	margin: 0 0 2px 0;
+	padding: 2px 0;
+}
+
+#info-details dl {
+	margin: 0;
+}
+
+#info-details dt {
+	margin: 0;
+}
+
+#info-details dd {
+	margin: 0 0 0 1em;
+	font-size: 90%;
+}
+
+#info-details dd.sign-info {
+	margin: 2px;
+	padding: 3px;
+	background: #eeeeee;
+	border: 1px solid #999999;
+	border-radius: 2px;
+	font-size: 90%;
+	font-style: italic;
+	text-align: center;
+}
+
+#timestamp {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+#version {
+	display: block;
+	box-sizing: border-box;
+	background: #eeeeee;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+	border-radius: 2px;
+	margin: 3px 0 0 0;
+	padding: 2px;
+	clear: both;
+	font-size: 80%;
+}
+
+#sidebar-toggle {
+	display: block;
+	position:absolute;
+	box-sizing: border-box;
+	left: 189px;
+	top: 8px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-radius: 0 5px 5px 0;
+	width: 30px;
+	height: 30px;
+	padding: 3px;
+	cursor: pointer;
+	transition: left 200ms ease-in-out;
+}
+#sidebar-toggle i {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url('menu.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#sidebar-toggle:active i {
+	background-position: 0px 1px;
+}
+#sidebar-toggle:focus {
+	outline: none;
+}
+.no-sidebar #sidebar-toggle {
+	left: 0;
+}
+
+#search {
+	position: absolute;
+	box-sizing: border-box;
+	width: auto;
+	height: 30px;
+	left: 226px;
+	right: 8px;
+	top: 8px;
+	display: block;
+	margin: 0;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	overflow: hidden;
+	transition: left 200ms ease-in-out;
+}
+.no-sidebar #search {
+	left: 37px;
+}
+
+#search:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#searchbox {
+	position: static;
+	box-sizing: border-box;
+	width: calc(100% - 28px);
+	height: 28px;
+	border: none;
+	border-radius: 3px;
+	background: transparent;
+	padding: 6px;
+	color: #444;
+	float: left;
+	font-size: 100%;
+}
+#searchbox:focus {
+	outline: none;
+}
+
+#searchbutton {
+	width: 24px;
+	height: 24px;
+	border-radius: 3px;
+	background-image: url('search.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	cursor: pointer;
+	margin: 2px;
+}
+
+#searchbutton:active {
+	background-position: 0px 1px;
+}
+
+#autocomplete {
+	position: absolute;
+	left: 230px;
+	top: 38px;
+	background-color: #FFFFFF;
+	border-radius: 0 0 2px 2px;
+	width: 292px;
+	overflow: hidden;
+}
+
+#autocomplete div {
+	padding: 3px;
+	font-size: 127%;
+	cursor: pointer;
+}
+
+#autocomplete div:hover {
+	background-color: #8EAEEE;
+}
+
+.badge {
+	position: fixed;
+	bottom: 8px;
+	right: 8px;
+	width: 32px;
+	height: 32px;
+	box-sizing: border-box;
+	display: block;
+	background-color: #006699;
+	background-image: radial-gradient(closest-side at 45% 45%,#00CCFF 0%,#006699);
+	background-repeat: no-repeat;
+	background-size: contain;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+	border: 2px solid #003366;
+	border-radius: 16px;
+	overflow: hidden;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 27px;
+	cursor: pointer;
+}
+
+.popup {
+	box-sizing: border-box;
+	position: fixed;
+	width: 700px;
+	left: 50%;
+	top: 120px;
+	bottom: 120px;
+	margin-left: -350px;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	color: #000000;
+	font-size: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.popup-screen {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: transparent;
+}
+
+.no-ui #sidebar,
+.no-ui #sidebar-toggle,
+.no-ui #search {
+	display: none !important;
+}
+
+body .touch-display {
+	font-size: 16px;
+}
+
+.touch-display .notification {
+	width: auto;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	margin: 0;
+}
+
+.touch-display #sidebar {
+	width: 250px;
+	border-radius: 5px 0 5px 5px;
+}
+.no-sidebar.touch-display #sidebar {
+	left: -250px;
+}
+
+.touch-display #zoom-in,
+.touch-display #zoom-out {
+	width: 46px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 200%;
+}
+.touch-display #zoom-scale {
+	line-height: 46px;
+	font-size: 140%;
+}
+
+.touch-display #sidebar footer {
+	position: static;
+	display: block;
+	margin-top: 0.5em;
+}
+
+.touch-display #sidebar-toggle {
+	left: 258px;
+	font-size: 36px;
+	line-height: 46px;
+	border-radius: 0 5px 5px 0;
+	width: 46px;
+	height: 46px;
+	padding: 0;
+}
+.no-sidebar.touch-display #sidebar-toggle {
+	left: 0;
+}
+
+.touch-display #search {
+	height: 46px;
+	left: 313px;
+	border-radius: 5px;
+}
+.no-sidebar.touch-display #search {
+	left: 55px;
+}
+
+.touch-display #searchbox {
+	width: calc(100% - 44px);
+	height: 44px;
+	border-radius: 5px;
+	font-size: 120%;
+}
+
+.touch-display #searchbutton {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.touch-display #autocomplete {
+	left: 317px;
+	top: 54px;
+	font-size: 140%;
+	width: 300px;
+}
+.no-sidebar.touch-display #autocomplete {
+	left: 59px;
+}
+
+.touch-display #coords,
+.touch-display #coords #coords-pointer,
+.touch-display #coords #coords-mouse,
+.touch-display #coords #coords-distance,
+.touch-display .badge,
+.touch-display .popup,
+.touch-display .popup-screen {
+	display: none !important;
+}
+
+.touch-display #coords.pointer-set,
+.touch-display #coords.pointer-set #coords-pointer {
+	display: block;
+}
