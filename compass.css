@@ -1,0 +1,26 @@
+
+#compass {
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 100px;
+    right: 8px;
+    top: 46px;
+    background-color: #006699;
+    background-image: url('compass.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+    border: 2px solid #003366;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+
+.no-ui #compass,
+.touch-display #compass {
+    display: none !important;
+}
