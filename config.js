@@ -78,10 +78,12 @@ deeds.push(new Deed('Portobelo','Kilem','Kilem',1675792074275,false,4,2836,689,2
 deeds.push(new Deed('Art Of Zen','Zenity','Zenity',1675802758198,false,4,3370,633,182,false,3365,628,3380,638,0));
 deeds.push(new Deed('Hot Sauce Central','Frank','Frank',1675903902733,false,4,369,2423,106,false,363,2417,381,2433,0));
 deeds.push(new Deed('Wolfmere','Wolfdangler','Wolfdangler',1676057052473,false,4,882,931,3,false,862,911,902,941,0));
-deeds.push(new Deed('Peachstone','Zelan','Zelan',1676059323098,false,4,703,624,156,false,693,614,713,634,0));
+deeds.push(new Deed('Peachstone','Zelan','Zelan',1676059323098,false,4,703,624,156,false,653,574,753,634,0));
 deeds.push(new Deed('Sleepy Town','Tinashunter','Tinashunter',1676089981423,false,4,416,2481,154,false,406,2471,426,2491,0));
 deeds.push(new Deed('Bull Shores Shipyards','Grommyboi','Grommyboi',1676230367627,false,4,3519,1656,63,false,3499,1636,3539,1676,0));
 deeds.push(new Deed('Versailles','Cierra','Cierra',1676237985652,false,4,3475,1295,37,false,3445,1275,3490,1315,0));
+deeds.push(new Deed('Purgatory','Baaz','Baaz',1676356791303,false,4,2456,2510,180,false,2446,2495,2466,2525,0));
+deeds.push(new Deed('Polonia','Czemiel','Czemiel',1676387465028,false,4,339,1194,108,false,329,1184,349,1202,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -89,11 +91,12 @@ kingdoms[3] = new Kingdom(3,'Horde of the Summoned','','');
 kingdoms[4] = new Kingdom(4,'Freedom Isles','','');
 highwayNodes = [
    [1251,1689,186,1117,1689,52],[1250,1688,186,1251,1689,186],[1250,1689,186,1250,1688,186,1],[1112,1694,50,1117,1689,52],[1250,636,466,702,636,171,1],
-   [626,1699,66,1],[644,1694,66,1],[631,1694,66,1112,1694,50],[626,1697,66,626,1853,300],[628,1695,66,626,1697,66],
-   [630,1695,66,628,1695,66],[630,1695,66,631,1694,66],[702,636,171,701,635,171],[701,625,157,701,635,171,1],[369,2432,98,440,2432,240,1]
+   [626,1699,66,1],[644,1694,66,1],[626,2433,428,626,2414,448],[631,1694,66,1112,1694,50],[626,1697,66,626,1853,300],
+   [628,1695,66,626,1697,66],[630,1695,66,628,1695,66],[630,1695,66,631,1694,66],[702,636,171,701,635,171],[701,625,157,701,635,171,1],
+   [369,2432,98,626,2432,431,1],[625,2432,431,626,2433,428],[626,2432,431,369,2432,98,1]
 ];
 bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1676330237613;
+var timestamp = 1676471112019;
