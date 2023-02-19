@@ -86,6 +86,8 @@ deeds.push(new Deed('Purgatory','Baaz','Baaz',1676356791303,false,4,2456,2510,18
 deeds.push(new Deed('Polonia','Czemiel','Czemiel',1676387465028,false,4,339,1194,108,false,329,1184,349,1202,0));
 deeds.push(new Deed('Avalon','Adoney','Adoney',1676514288526,true,4,377,3039,93,false,346,3019,387,3059,0));
 deeds.push(new Deed('Aberdine','Ziane','Ziane',1676514641050,true,4,408,3036,85,false,398,3011,436,3061,0));
+deeds.push(new Deed('Zimna Wodka','Ciastek','Ciastek',1676738889861,false,4,1983,3312,20,false,1968,3297,1998,3317,0));
+deeds.push(new Deed('Cedar Point','Gornell','Gornell',1676748719985,false,4,743,2836,112,false,723,2811,763,2861,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -103,4 +105,4 @@ bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1676628367749;
+var timestamp = 1676771893215;
