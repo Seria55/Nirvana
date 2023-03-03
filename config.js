@@ -87,12 +87,13 @@ deeds.push(new Deed('Avalon','Adoney','Adoney',1676514288526,true,4,377,3039,93,
 deeds.push(new Deed('Aberdine','Ziane','Ziane',1676514641050,true,4,408,3036,85,false,398,3011,436,3061,0));
 deeds.push(new Deed('Zimna Wodka','Ciastek','Ciastek',1676738889861,false,4,1983,3312,20,false,1968,3297,1998,3317,0));
 deeds.push(new Deed('Guppy Green','Drazin','Drazin',1676850955261,false,4,1055,1888,66,false,1048,1881,1062,1899,0));
-deeds.push(new Deed('Hots Pirate H Q','Cptjack','Cptjack',1676964555328,false,4,1487,2256,37,false,1457,2191,1522,2276,0));
+deeds.push(new Deed('Hots Pirate H Q','Cptjack','Cptjack',1676964555328,false,4,1487,2256,37,false,1457,2191,1532,2276,0));
 deeds.push(new Deed('Versailles','Cierra','Cierra',1677018567781,false,4,3468,1291,45,false,3437,1259,3493,1323,5));
 deeds.push(new Deed('White Pearl','Empress','Empress',1677095628827,false,4,3240,2909,11,false,3220,2889,3260,2929,0));
 deeds.push(new Deed('Grannys Star Place','Grannysmith','Grannysmith',1677433673302,false,4,954,618,67,false,934,598,974,635,0));
 deeds.push(new Deed('King\'s Cross','Buzka','Buzka',1677440511503,false,4,2335,3434,30,false,2330,3429,2340,3439,0));
 deeds.push(new Deed('Cherriepoort','Gromble','Gromble',1677607659237,false,4,436,2828,19,false,431,2823,441,2833,0));
+deeds.push(new Deed('Stellar Garden','Stewen','Stewen',1677798432161,false,4,1118,1668,76,false,1111,1660,1124,1675,0));
 focusZones.push(new FocusZone('llll',3484,1289,-24,16,3484,1257,3484,1321));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
@@ -113,4 +114,4 @@ bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1677798400542;
+var timestamp = 1677870642345;
