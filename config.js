@@ -96,10 +96,11 @@ deeds.push(new Deed('Kleinhawe','Gromble','Gromble',1678427873783,false,4,617,15
 deeds.push(new Deed('Kito','Master','Master',1678449164984,false,4,1195,1673,180,false,1190,1668,1200,1678,0));
 deeds.push(new Deed('Serenity Valley','Steve','Steve',1678490811657,false,4,832,1311,52,false,827,1306,837,1316,0));
 deeds.push(new Deed('Rhamahold','Rhamshinn','Rhamshinn',1678548528650,false,4,2783,3728,33,false,2773,3718,2793,3738,0));
-deeds.push(new Deed('Hill Of Vynora','Temilia','Temilia',1678552293875,false,4,456,1674,45,false,431,1668,462,1680,0));
-focusZones.push(new FocusZone('llll',3484,1289,-24,16,3484,1257,3484,1321));
-focusZones.push(new FocusZone('lll',2436,175,153,17,2426,160,2446,190));
-focusZones.push(new FocusZone('jjj',2436,175,153,17,2426,160,2446,190));
+deeds.push(new Deed('Hill Of Vynora','Temilia','Temilia',1678552293875,false,4,456,1674,45,false,416,1664,462,1684,0));
+deeds.push(new Deed('Grove','Forest','Forest',1678593072959,false,4,2669,1833,21,false,2648,1812,2690,1854,0));
+deeds.push(new Deed('Merryvale','Moontsu','Moontsu',1678624582781,false,4,693,1529,310,false,686,1523,700,1536,0));
+deeds.push(new Deed('The Dragon\'s Keep','Eveswaffora','Eveswaffora',1678795571378,false,4,872,1732,381,false,842,1702,902,1762,0));
+deeds.push(new Deed('Danger Island','Dragon','Dragon',1678831259293,false,4,2499,174,298,false,2419,94,2579,254,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -107,6 +108,7 @@ kingdoms[3] = new Kingdom(3,'Horde of the Summoned','','');
 kingdoms[4] = new Kingdom(4,'Freedom Isles','','');
 guardTowers.push(new GuardTower('',16416403,4,2456,2508,180,''));
 guardTowers.push(new GuardTower('',21108450,4,398,2479,154,''));
+guardTowers.push(new GuardTower('',28720584,4,1525,451,237,''));
 highwayNodes = [
    [1251,1689,186,1117,1689,52],[1250,1688,186,1251,1689,186],[1250,1689,186,1250,1688,186,1],[1112,1694,50,1117,1689,52],[1250,636,466,677,636,221,1],
    [626,1699,66,1],[1250,500,218,1250,1349,241,1],[1250,500,218,1463,500,327,1],[644,1694,66,1],[1464,440,109,1464,499,326,1],
@@ -119,4 +121,4 @@ bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1678582162048;
+var timestamp = 1678919934544;
