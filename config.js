@@ -87,7 +87,7 @@ deeds.push(new Deed('Aberdine','Ziane','Ziane',1676514641050,true,4,408,3036,85,
 deeds.push(new Deed('Zimna Wodka','Ciastek','Ciastek',1676738889861,false,4,1983,3312,20,false,1968,3297,1998,3317,0));
 deeds.push(new Deed('Guppy Green','Drazin','Drazin',1676850955261,false,4,1055,1888,66,false,1048,1881,1062,1899,0));
 deeds.push(new Deed('Hots Pirate H Q','Cptjack','Cptjack',1676964555328,false,4,1487,2256,37,false,1457,2191,1532,2276,0));
-deeds.push(new Deed('Versailles','Cierra','Cierra',1677018567781,false,4,3468,1291,45,false,3423,1241,3498,1341,10));
+deeds.push(new Deed('Versailles','Cierra','Cierra',1677018567781,false,4,3468,1291,45,false,3413,1236,3498,1346,10));
 deeds.push(new Deed('White Pearl','Empress','Empress',1677095628827,false,4,3240,2909,11,false,3220,2889,3260,2929,0));
 deeds.push(new Deed('Grannys Star Place','Grannysmith','Grannysmith',1677433673302,false,4,954,618,67,false,934,598,974,635,0));
 deeds.push(new Deed('King\'s Cross','Buzka','Buzka',1677440511503,false,4,2335,3434,30,false,2330,3429,2340,3439,0));
@@ -101,6 +101,7 @@ deeds.push(new Deed('Grove','Forest','Forest',1678593072959,false,4,2669,1833,21
 deeds.push(new Deed('Merryvale','Moontsu','Moontsu',1678624582781,false,4,693,1529,310,false,686,1523,700,1536,0));
 deeds.push(new Deed('The Dragon\'s Keep','Eveswaffora','Eveswaffora',1678795571378,false,4,872,1732,381,false,842,1702,902,1762,0));
 deeds.push(new Deed('Danger Island','Dragon','Dragon',1678831259293,false,4,2499,174,298,false,2419,94,2579,254,0));
+deeds.push(new Deed('Artems Post','Artem','Artem',1679030759739,false,4,746,2836,112,false,739,2816,753,2843,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -121,4 +122,4 @@ bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1678919934544;
+var timestamp = 1679127382357;
