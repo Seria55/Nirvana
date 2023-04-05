@@ -72,7 +72,7 @@ var guardTowers = [];
 var signs = [];
 deeds.push(new Deed('Aurora','Gaea','Gaea',1675474483281,false,4,637,1692,66,true,596,1674,666,1709,0));
 deeds.push(new Deed('Grukhanovill','Grukhan','Grukhan',1675674647878,false,4,615,1601,41,false,595,1596,623,1606,0));
-deeds.push(new Deed('Mystic Retreat','Peanut','Peanut',1675724177298,false,4,1464,398,44,false,1389,343,1539,461,5));
+deeds.push(new Deed('Mystic Retreat','Peanut','Peanut',1675724177298,false,4,1464,398,44,false,1389,343,1539,461,10));
 deeds.push(new Deed('Portobelo','Kilem','Kilem',1675792074275,false,4,2836,689,240,false,2811,664,2861,714,0));
 deeds.push(new Deed('Hot Sauce Central','Frank','Frank',1675903902733,false,4,369,2423,106,false,363,2417,381,2433,0));
 deeds.push(new Deed('Peachstone','Zelan','Zelan',1676059323098,false,4,703,624,156,false,653,574,753,634,0));
@@ -84,7 +84,7 @@ deeds.push(new Deed('Aberdine','Ziane','Ziane',1676514641050,true,4,408,3036,85,
 deeds.push(new Deed('Zimna Wodka','Ciastek','Ciastek',1676738889861,false,4,1983,3312,20,false,1968,3297,1998,3317,0));
 deeds.push(new Deed('Guppy Green','Drazin','Drazin',1676850955261,false,4,1055,1888,66,false,1048,1881,1062,1899,0));
 deeds.push(new Deed('Hots Pirate H Q','Cptjack','Cptjack',1676964555328,false,4,1487,2256,37,false,1457,2191,1532,2276,0));
-deeds.push(new Deed('Versailles','Cierra','Cierra',1677018567781,false,4,3468,1291,45,false,3393,1211,3498,1371,10));
+deeds.push(new Deed('Versailles','Cierra','Cierra',1677018567781,false,4,3468,1291,50,false,3393,1211,3498,1371,10));
 deeds.push(new Deed('White Pearl','Empress','Empress',1677095628827,false,4,3240,2909,11,false,3220,2889,3260,2929,0));
 deeds.push(new Deed('Grannys Star Place','Grannysmith','Grannysmith',1677433673302,false,4,954,618,67,false,934,598,974,635,0));
 deeds.push(new Deed('King\'s Cross','Buzka','Buzka',1677440511503,false,4,2335,3434,30,false,2330,3429,2340,3439,0));
@@ -98,11 +98,18 @@ deeds.push(new Deed('The Dragon\'s Keep','Eveswaffora','Eveswaffora',16787955713
 deeds.push(new Deed('Danger Island','Dragon','Dragon',1678831259293,false,4,2499,174,298,false,2419,94,2579,254,0));
 deeds.push(new Deed('Artems Post','Artem','Artem',1679030759739,false,4,746,2836,112,false,739,2816,753,2843,0));
 deeds.push(new Deed('Mercyful Fate','Venomus','Venomus',1679246995941,true,4,570,1760,51,false,558,1740,590,1776,0));
-deeds.push(new Deed('Utopia','Pure','Pure',1679257154116,false,4,707,3388,110,false,692,3373,722,3403,0));
+deeds.push(new Deed('Utopia','Pure','Pure',1679257154116,false,4,707,3388,118,false,692,3373,722,3403,0));
 deeds.push(new Deed('Northlake','General','General',1679306248279,false,4,2308,1559,36,false,2293,1544,2323,1574,0));
 deeds.push(new Deed('Stalwart Hold','Miragio','Miragio',1679331726591,false,4,1412,2423,82,false,1402,2413,1422,2433,0));
 deeds.push(new Deed('Dwarf Hideout','Temilia','Temilia',1679412469389,false,4,375,1339,111,false,370,1334,380,1344,0));
-deeds.push(new Deed('Beach Resort','Baccus','Baccus',1679989768186,true,4,410,2711,24,false,390,2696,430,2726,0));
+deeds.push(new Deed('Beach Resort','Baccus','Baccus',1679989768186,true,4,410,2711,24,false,390,2696,470,2726,0));
+deeds.push(new Deed('Frakland','Frakyr','Frakyr',1680200480460,false,4,1037,3261,50,false,1027,3251,1047,3271,5));
+deeds.push(new Deed('Festers Place','Fester','Fester',1680354242075,true,4,965,2166,157,false,937,2146,993,2186,0));
+deeds.push(new Deed('City Of Lost','Gardenkeeper','Gardenkeeper',1680454978326,false,4,856,1054,35,false,816,1019,861,1059,0));
+deeds.push(new Deed('Trelheim','Tralen','Tralen',1680487030701,false,4,1711,991,174,false,1698,978,1724,1001,0));
+deeds.push(new Deed('Thunder Bay','Falkirk','Falkirk',1680498592280,false,4,1900,3564,47,false,1889,3548,1927,3575,0));
+deeds.push(new Deed('The Bakery','Roundbread','Roundbread',1680528757903,false,4,1694,1716,463,false,1687,1709,1701,1723,0));
+deeds.push(new Deed('Candy City','Skittle','Skittle',1680567418554,false,4,1960,2013,53,false,1935,1988,1985,2038,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -111,6 +118,7 @@ kingdoms[4] = new Kingdom(4,'Freedom Isles','','');
 guardTowers.push(new GuardTower('',16416403,4,2456,2508,180,''));
 guardTowers.push(new GuardTower('',21108450,4,398,2479,154,''));
 guardTowers.push(new GuardTower('',28720584,4,1525,451,237,''));
+guardTowers.push(new GuardTower('',41498195,4,1408,445,183,''));
 highwayNodes = [
    [1251,1689,186,1117,1689,52],[1250,1688,186,1251,1689,186],[1250,1689,186,1250,1688,186,1],[1112,1694,50,1117,1689,52],[1250,636,466,677,636,221,1],
    [626,1699,66,1],[1250,500,218,1250,1349,241,1],[1250,500,218,1463,500,327,1],[644,1694,66,1],[1464,440,109,1464,499,326,1],
@@ -123,4 +131,4 @@ bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1679993381823;
+var timestamp = 1680680716087;
