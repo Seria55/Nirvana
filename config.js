@@ -92,7 +92,6 @@ deeds.push(new Deed('Kleinhawe','Gromble','Gromble',1678427873783,false,4,617,15
 deeds.push(new Deed('Kito','Master','Master',1678449164984,false,4,1195,1673,180,false,1190,1668,1200,1678,0));
 deeds.push(new Deed('Serenity Valley','Steve','Steve',1678490811657,false,4,832,1311,52,false,827,1306,837,1316,0));
 deeds.push(new Deed('Hill Of Vynora','Temilia','Stewen',1678552293875,false,4,456,1674,45,false,411,1662,462,1686,0));
-deeds.push(new Deed('Merryvale','Moontsu','Moontsu',1678624582781,false,4,693,1529,310,false,686,1523,700,1536,0));
 deeds.push(new Deed('The Dragon\'s Keep','Eveswaffora','Eveswaffora',1678795571378,false,4,872,1732,381,false,842,1702,902,1762,0));
 deeds.push(new Deed('Danger Island','Dragon','Dragon',1678831259293,false,4,2499,174,298,false,2419,94,2579,254,0));
 deeds.push(new Deed('Artems Post','Artem','Artem',1679030759739,false,4,746,2836,112,false,739,2816,753,2843,0));
@@ -110,6 +109,7 @@ deeds.push(new Deed('The Bakery','Roundbread','Roundbread',1680528757903,false,4
 deeds.push(new Deed('Candy City','Skittle','Skittle',1680567418554,false,4,1960,2013,53,false,1935,1988,1985,2038,0));
 deeds.push(new Deed('Morning Fog','Aassepoester','Aassepoester',1680752670848,true,4,524,1801,71,false,502,1758,547,1845,0));
 deeds.push(new Deed('Festers Place','Fester','Fester',1681193539891,false,4,965,2165,161,false,930,2145,1000,2185,0));
+deeds.push(new Deed('Elemental','Shadroth','Shadroth',1681994249293,false,4,695,1704,335,false,690,1695,710,1715,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -134,4 +134,4 @@ bridgeNodes = [
 ];
 tunnelNodes = [
 ];
-var timestamp = 1681957354453;
+var timestamp = 1682361975542;
