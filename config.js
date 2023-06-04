@@ -82,7 +82,6 @@ deeds.push(new Deed('Grannys Star Place','Grannysmith','Grannysmith',16774336733
 deeds.push(new Deed('King\'s Cross','Buzka','Buzka',1677440511503,false,4,2335,3434,30,false,2330,3429,2340,3439,0));
 deeds.push(new Deed('Hill Of Vynora','Temilia','Stewen',1678552293875,false,4,456,1674,45,false,410,1662,462,1686,0));
 deeds.push(new Deed('The Dragon\'s Keep','Eveswaffora','Eveswaffora',1678795571378,false,4,872,1732,381,false,842,1702,902,1762,0));
-deeds.push(new Deed('Danger Island','Dragon','Dragon',1678831259293,false,4,2499,174,298,false,2419,94,2579,254,0));
 deeds.push(new Deed('Mercyful Fate','Venomus','Venomus',1679246995941,true,4,570,1760,51,false,558,1740,590,1776,0));
 deeds.push(new Deed('Utopia','Pure','Pure',1679257154116,false,4,707,3388,118,false,692,3373,722,3403,0));
 deeds.push(new Deed('Northlake','General','General',1679306248279,false,4,2308,1559,36,false,2293,1544,2323,1574,0));
@@ -101,18 +100,21 @@ deeds.push(new Deed('The Last Of The Bean Family','Charleyboy','Charleyboy',1682
 deeds.push(new Deed('The Neighborhood Of Make-believe','Eteladric','Eteladric',1682886297785,false,4,772,1119,36,false,752,1109,777,1129,0));
 deeds.push(new Deed('Homestead','Simone','Simone',1682902466656,false,4,1133,1816,19,false,1128,1811,1138,1821,0));
 deeds.push(new Deed('Noreaster','Rosey','Rosey',1683202938487,false,4,3744,525,105,false,3704,485,3784,565,0));
-deeds.push(new Deed('Whitestone','Plebcicle','Plebcicle',1683303479066,false,4,2783,3714,76,false,2766,3697,2800,3724,5));
 deeds.push(new Deed('Fredericks Town','Tinaskat','Tinaskat',1683460716996,false,4,867,852,309,false,852,837,882,867,0));
-deeds.push(new Deed('E N C L A V E','Shadowthief','Shadowthief',1683738624226,false,4,344,3736,55,false,319,3711,369,3761,0));
-deeds.push(new Deed('Lake View','Missnobody','Missnobody',1683826579832,false,4,1278,1775,40,false,1263,1750,1298,1800,10));
+deeds.push(new Deed('E N C L A V E','Shadowthief','Shadowthief',1683738624226,false,4,344,3736,55,false,319,3711,369,3776,0));
+deeds.push(new Deed('Lake View','Missnobody','Missnobody',1683826579832,false,4,1278,1775,40,false,1258,1755,1311,1800,5));
 deeds.push(new Deed('Westfall Vineyard','Korii','Korii',1684029020976,false,4,366,2162,74,false,361,2157,371,2167,0));
 deeds.push(new Deed('Shubsville','Shubs','Shubs',1684249269245,false,4,718,1220,192,false,698,1200,738,1240,0));
-deeds.push(new Deed('La Dimora','Mangurian','Mangurian',1684355786015,false,4,325,2246,54,false,320,2241,332,2251,0));
-deeds.push(new Deed('North Bay','Smithwell','Smithwell',1684466480983,false,4,2354,620,54,false,2349,615,2359,625,0));
+deeds.push(new Deed('La Dimora','Mangurian','Mangurian',1684355786015,false,4,325,2246,54,false,320,2234,332,2251,0));
 deeds.push(new Deed('Polonia','Czemiel','Czemiel',1684504617340,false,4,339,1194,108,false,309,1164,369,1224,0));
 deeds.push(new Deed('Twilight Montana','Twilightsword','Twilightsword',1684756921918,false,4,702,1657,336,false,697,1652,707,1662,0));
 deeds.push(new Deed('Minoc Castle','Lostman','Lostman',1684871497189,false,4,2184,495,80,false,2179,490,2189,500,0));
 deeds.push(new Deed('The Covenant','Velor','Velor',1685043461625,false,4,638,1979,434,false,627,1974,643,1984,0));
+deeds.push(new Deed('Wolfmere','Wolfdangler','Wolfdangler',1685285184740,false,4,882,927,38,false,872,917,892,937,0));
+deeds.push(new Deed('Whitespire','Plebcicle','Plebcicle',1685375454642,false,4,764,2818,215,false,734,2788,794,2848,0));
+deeds.push(new Deed('Danger Island','Dragon','Dragon',1685437803428,false,4,2500,175,298,false,2418,94,2581,255,5));
+deeds.push(new Deed('Bottom\'s End','Scruffybottom','Scruffybottom',1685804745304,false,4,2693,1666,126,false,2673,1646,2713,1686,0));
+deeds.push(new Deed('Round Rock','Coulple','Coulple',1685837203026,false,4,3629,2626,76,false,3609,2621,3649,2631,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -123,6 +125,7 @@ guardTowers.push(new GuardTower('',21108450,4,398,2479,154,''));
 guardTowers.push(new GuardTower('',28720584,4,1525,451,237,''));
 guardTowers.push(new GuardTower('',41498195,4,1408,445,183,''));
 guardTowers.push(new GuardTower('',47388154,4,1526,363,19,''));
+signs.push(new Sign('',73992809,1696,1690,492,'Archaeological Site - The Bakery'));
 highwayNodes = [
    [1112,1694,62,1117,1689,62],[1250,636,466,677,636,221,1],[626,1699,66,1],[1250,500,218,1250,1693,184,1],[1250,500,218,1463,500,327,1],
    [644,1694,66,1],[1464,440,109,1464,499,326,1],[3369,1689,340,3369,580,42,1],[631,1694,66,1112,1694,62],[628,1695,66,626,1697,66],
@@ -140,4 +143,4 @@ bridgeNodes = [
 tunnelNodes = [
    [3786,1689,72,3782,1689,76,1]
 ];
-var timestamp = 1685891846492;
+var timestamp = 1685896986604;
