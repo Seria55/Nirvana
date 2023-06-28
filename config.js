@@ -117,6 +117,9 @@ deeds.push(new Deed('Aiwendil','Radagast','Radagast',1687393331276,false,4,390,2
 deeds.push(new Deed('Nirvus Lakeside','Nirvus','Nirvus',1687399072815,false,4,1280,2370,153,false,1260,2350,1300,2390,0));
 deeds.push(new Deed('Lyngsta','Denully','Denully',1687643023700,false,4,643,1798,252,false,638,1788,653,1808,0));
 deeds.push(new Deed('Brolo','Danious','Danious',1687708939163,false,4,1951,2000,40,false,1936,1990,1976,2010,5));
+deeds.push(new Deed('Atlantis','Smokeyboy','Smokeyboy',1687873514023,false,4,516,1787,39,false,496,1767,536,1807,0));
+deeds.push(new Deed('Makuby','Sandra','Sandra',1687895791248,false,4,1347,472,209,false,1327,452,1367,492,0));
+deeds.push(new Deed('Coven','Roux','Roux',1687934501450,false,4,382,3035,93,false,372,3025,392,3045,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
 kingdoms[2] = new Kingdom(2,'Mol Rehan','','');
@@ -146,4 +149,4 @@ bridgeNodes = [
 tunnelNodes = [
    [3786,1689,72,3782,1689,76,1]
 ];
-var timestamp = 1687779492205;
+var timestamp = 1687950776060;
