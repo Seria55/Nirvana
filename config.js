@@ -100,7 +100,6 @@ deeds.push(new Deed('Lyngsta','Denully','Denully',1687643023700,false,4,643,1798
 deeds.push(new Deed('Brolo','Danious','Danious',1687708939163,false,4,1951,2000,40,false,1936,1990,1976,2010,5));
 deeds.push(new Deed('Atlantis','Smokeyboy','Smokeyboy',1687873514023,false,4,516,1787,24,false,466,1767,536,1842,0));
 deeds.push(new Deed('Makuby','Sandra','Tiopatinhas',1687895791248,false,4,1347,472,200,false,1317,373,1368,571,0));
-deeds.push(new Deed('TBA','Irunfromtrolls','Irunfromtrolls',1687976668443,false,4,1056,1245,24,false,1051,1240,1061,1250,0));
 deeds.push(new Deed('Table Manners','Tatang','Cucara',1688481333279,false,4,320,390,5,false,309,379,331,401,0));
 deeds.push(new Deed('Liberty','Metrix','Metrix',1688807920221,false,4,1167,2911,170,false,1117,2896,1217,3046,0));
 deeds.push(new Deed('Deepfall Hollows','Tatang','Tatang',1688811875716,false,4,988,2607,486,false,977,2596,999,2618,0));
@@ -128,20 +127,20 @@ deeds.push(new Deed('Camelot City','Redock','Redock',1693489347575,false,4,1720,
 deeds.push(new Deed('The Tea Gardens','Faenox','Faenox',1693991048663,false,4,1889,3287,174,false,1874,3272,1904,3302,0));
 deeds.push(new Deed('Rimouvista','Lynn','Lynn',1694143705117,false,4,685,1529,310,false,680,1524,690,1534,0));
 deeds.push(new Deed('Leafcull','Lathe','Lathe',1694279521880,false,4,498,1196,265,false,458,1156,538,1236,0));
-deeds.push(new Deed('Down Under','Seria','Seria',1694360679106,false,4,600,1100,230,false,575,1075,630,1125,5));
+deeds.push(new Deed('Down Under','Seria','Seria',1694360679106,false,4,600,1100,230,false,575,1075,650,1125,5));
 deeds.push(new Deed('Moonbright','Poptart','Poptart',1694481540286,false,4,1335,3487,45,false,1320,3447,1375,3527,0));
 deeds.push(new Deed('Nirv','Nirvfintewil','Nirvfintewil',1694599357115,false,4,467,1360,234,false,462,1335,492,1365,0));
-deeds.push(new Deed('Scales','Rooferrob','Rooferrob',1694607926744,false,4,1228,2267,75,false,1217,2256,1239,2278,2));
+deeds.push(new Deed('Scales','Rooferrob','Rooferrob',1694607926744,false,4,1228,2267,75,false,1213,2252,1243,2282,2));
 deeds.push(new Deed('Pizza Pizza Pie','Mendacium','Mendacium',1694808715688,false,4,626,2714,360,false,601,2689,651,2739,0));
 deeds.push(new Deed('Spatule','Aubergine','Aubergine',1695049409126,false,4,3729,972,4,false,3724,967,3734,977,0));
-deeds.push(new Deed('Camelot','Lorexx','Lorexx',1695055908655,false,4,1062,1053,141,false,1052,1043,1072,1063,10));
+deeds.push(new Deed('Camelot','Lorexx','Lorexx',1695055908655,false,4,1062,1053,141,false,1042,1033,1082,1073,10));
 deeds.push(new Deed('Whisperview Shores','Kamshack','Kamshack',1695246130683,false,4,1000,452,9,false,990,442,1010,462,0));
 deeds.push(new Deed('Treehugger','Alux','Alux',1695404207147,false,4,2129,3507,89,false,2118,3499,2141,3515,0));
 deeds.push(new Deed('Magreen\'s','Magreen','Magreen',1695703851054,false,4,772,1119,36,false,767,1114,777,1124,0));
 deeds.push(new Deed('Waterfront','Xivs','Xivs',1695956981223,false,4,1516,2187,74,false,1476,2147,1556,2267,0));
 deeds.push(new Deed('Hilltop','Imdolin','Imdolin',1695958423153,false,4,2127,1606,283,false,2115,1594,2139,1618,0));
 deeds.push(new Deed('Timberwater','Jeep','Jeep',1695997783904,false,4,299,2983,25,false,289,2968,319,2998,1));
-deeds.push(new Deed('Macgreen\'s Land','Macgreen','Macgreen',1696042885172,false,4,1256,585,384,false,1251,570,1286,600,0));
+deeds.push(new Deed('Macgreen\'s Land','Macgreen','Macgreen',1696042885172,false,4,1256,585,384,false,1251,580,1261,590,0));
 deeds.push(new Deed('Kattegat','Heimall','Heimall',1696100133850,false,4,431,1902,35,false,416,1887,446,1917,0));
 kingdoms[0] = new Kingdom(0,'no known kingdom','','[color-list]');
 kingdoms[1] = new Kingdom(1,'Jenn-Kellon','','');
@@ -156,6 +155,7 @@ guardTowers.push(new GuardTower('',47388154,4,1526,363,19,''));
 guardTowers.push(new GuardTower('',95145855,4,1354,448,151,''));
 guardTowers.push(new GuardTower('',148518821,4,2129,3507,89,''));
 guardTowers.push(new GuardTower('',152355628,4,679,1476,295,''));
+guardTowers.push(new GuardTower('',155870774,4,679,1375,253,''));
 signs.push(new Sign('',73992809,1696,1690,491,'Archaeological Site - The Bakery'));
 highwayNodes = [
    [1112,1694,62,1117,1689,62],[1250,636,466,677,636,221,1],[626,1699,66,1],[1250,500,218,1250,1693,184,1],[1250,500,218,1463,500,327,1],
@@ -174,7 +174,7 @@ highwayNodes = [
    [3520,1664,78,3520,1689,156,1],[691,1694,335,692,1695,335,1],[692,1695,335,693,1694,335],[692,1699,352,692,1694,335,1],[536,1842,90,626,1842,284,1],
    [626,1842,284,536,1842,90,1],[1219,2266,76,1099,2266,187,1],[1100,2266,190,1099,2267,192],[1099,2280,213,1098,2281,214],[1099,2280,213,1099,2266,187],
    [914,2157,287,914,2280,268,1],[915,2281,269,1098,2281,214],[914,2280,268,915,2281,269],[914,2158,288,913,2157,288],[914,2158,288,915,2157,284],
-   [1356,500,284,1]
+   [1356,500,284,1],[1061,1048,141,1250,1048,344,1],[1250,1048,344,1061,1048,141,1],[1249,1048,344,1250,1049,344]
 ];
 bridgeNodes = [
    [664,2897,10,699,2897,11],[627,2897,10,661,2897,11],[737,2897,11,702,2897,10],[740,2897,10,774,2897,11],[626,2898,10,627,2897,10],
@@ -183,4 +183,4 @@ bridgeNodes = [
 tunnelNodes = [
    [3782,1689,76,3785,1689,74]
 ];
-var timestamp = 1696202237678;
+var timestamp = 1696808502280;
