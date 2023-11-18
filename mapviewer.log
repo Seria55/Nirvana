@@ -1,0 +1,37 @@
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.MapViewer: Loading config
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Server Name: Nirvana
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Web Page URL: [url]
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Server ID: 31416
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Map directory: C:\mapviewer-1.2.2\[path]
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Map directory (original): C:\Program Files (x86)\Steam\steamapps\common\Wurm Unlimited Dedicated Server\Nirvana Server
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Output directory: C:\mapviewer-1.2.2
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Output Format: HTML
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Overwrite existing resources: false
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Overwrite existing index: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Overwrite existing config: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Default map type: terrain
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show layers: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show deeds: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show guard towers: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show highways: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show signs: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show deed borders (3D): false
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Show deed borders (flat): true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Use player settings: false
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Use addons: true
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Addons directory: C:\mapviewer-1.2.2\[path]
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Addons URL: [url]
+[2023-11-17 02:19:49] SEVERE net.spirangle.mapviewer.Config: Guard tower IDs: For input string: "[ids]"
+java.lang.NumberFormatException: For input string: "[ids]"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at net.spirangle.mapviewer.Config.parseIntArray(Config.java:159)
+	at net.spirangle.mapviewer.Config.load(Config.java:126)
+	at net.spirangle.mapviewer.MapViewer.main(MapViewer.java:43)
+
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Guard tower IDs: [ids]
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Neutral Land Name: [name]
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.Config: Kingdom colors: [color-list]
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.MapViewer: Loading map data
+[2023-11-17 02:19:49] INFO net.spirangle.mapviewer.zone.ZoneInfo: Copying login database
