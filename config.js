@@ -1,7 +1,7 @@
 function Config() {}
 var config = new Config();
-config.size = 16;
-config.step = 256;
+config.size = 8;
+config.step = 500;
 config.x = 637;
 config.y = 1692;
 config.mode = "3d";
